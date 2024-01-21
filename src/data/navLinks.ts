@@ -1,13 +1,16 @@
-import {INavLinks} from "../types/INavLinks";
+import {INavLink} from "../types/INavLink";
 
-export const navLinks: INavLinks[] = [
+export const navLinks: INavLink[] = [
   {
     name: "Главная",
+    icon: "home",
   },
   {
     name: "Закладки",
+    icon: "note",
   },
   {
     name: "Профиль",
+    icon: "person",
   },
 ]

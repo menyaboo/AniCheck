@@ -6,5 +6,5 @@ export const NavigationView  = styled.View`
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding: 20px;
+  padding: 10px 25px;
 `
