@@ -4,6 +4,7 @@ import {FC, PropsWithChildren} from "react";
 
 import {store} from "../store";
 import {SafeAreaView} from "react-native-safe-area-context";
+import {StatusBar} from "expo-status-bar";
 
 const Stack = createNativeStackNavigator();
 
