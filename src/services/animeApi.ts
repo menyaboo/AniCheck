@@ -1,6 +1,5 @@
 import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react'
-import {IResponseTitle, ITitle} from "../types/ITitle";
-import {limitText} from "../utils/limitText";
+import {IResponseTitle} from "../types/ITitle";
 import {API_PARAMS, BASE_API_URL} from "../data/constants";
 
 export const animeApi = createApi({
