@@ -6,7 +6,7 @@ import {useGetNearlyTitlesQuery} from "../../../services/animeApi";
 
 type Props = {
   defaultAmountTitles?: number
-  amountTitlesScrolled?: number
+  amountTitlesScrolled: number
 }
 
 export const TitleList:FC<Props> = ({defaultAmountTitles = 10, amountTitlesScrolled = 10}) => {
