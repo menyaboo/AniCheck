@@ -6,7 +6,9 @@ export const store = configureStore({
     [animeApi.reducerPath]: animeApi.reducer,
   },
   middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(animeApi.middleware),
+    getDefaultMiddleware({
+      serializableCheck: false,
+    }).concat(animeApi.middleware),
 });
 
 export type RootState = ReturnType<typeof store.getState>

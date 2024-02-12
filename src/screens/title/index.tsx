@@ -1,16 +1,14 @@
 import React from 'react';
-import {useRoute} from '@react-navigation/native';
-import {TitleScreenRouteProp} from '../../types/StackNavigation';
+import {RouteProp, useRoute} from '@react-navigation/native';
+import {RootStackParamList} from '../../types/StackNavigation';
 import {ScreenView, Text} from '../../styles/global';
 import {TitleItem} from '../../components/home-screen/title-item';
 import {WebView} from 'react-native-webview';
-import {View} from "react-native";
-import {Video} from "expo-av";
 import {colors} from "../../styles/variables";
 
 export const TitleScreen = () => {
-  const route = useRoute<TitleScreenRouteProp>();
-  const {title} = route.params;
+  const route = useRoute<RouteProp<RootStackParamList, 'Title'>>();
+  const { title } = route.params;
 
   console.log(title.player.alternative_player)
 

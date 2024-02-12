@@ -17,7 +17,6 @@ export const ImageTitle = styled.Image`
   width: 120px;
   height: 170px;
   border-radius: 10px;
-  
 `
 
 export const Description = styled.View`
