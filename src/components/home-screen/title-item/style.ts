@@ -17,11 +17,18 @@ export const ImageTitle = styled.Image`
   width: 120px;
   height: 170px;
   border-radius: 10px;
-  
 `
 
 export const Description = styled.View`
   margin: 0 20px;
-  max-width: 250px;
+  max-width: 220px;
   align-items: start;
+`
+
+export const WatchView = styled.View`
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 5px;
 `
