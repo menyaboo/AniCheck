@@ -2,10 +2,9 @@ import styled from "styled-components/native";
 import {colors, sizes} from "./variables";
 import {Colors, Sizes} from "../types/Variablres";
 
-export const ScreenView = styled.View`
+export const ScreenView = styled.ScrollView`
   flex: 1;
   background-color: ${colors.background};
-  align-items: center;
   padding-bottom: 55px;
 `
 

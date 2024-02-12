@@ -1,17 +1,23 @@
-import {NavigationContainer} from "@react-navigation/native";
-import {Home} from "../screens/home";
-import {createNativeStackNavigator} from "@react-navigation/native-stack";
 import {FC, PropsWithChildren} from "react";
-import {View} from "react-native";
+import {NavigationContainer} from "@react-navigation/native";
+import {createNativeStackNavigator} from "@react-navigation/native-stack";
+
+import {TitleScreen} from "../screens/title-screen";
+import {HomeScreen} from "../screens/home-screen";
 
 const Stack = createNativeStackNavigator();
 
 export const ScreenProvider: FC<PropsWithChildren> = () => (
   <NavigationContainer>
-    <Stack.Navigator>
+    <Stack.Navigator initialRouteName="Home">
       <Stack.Screen
         name="Home"
-        component={Home}
+        component={HomeScreen}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="Title"
+        component={TitleScreen}
         options={{headerShown: false}}
       />
     </Stack.Navigator>

@@ -1,7 +1,7 @@
 import styled from "styled-components/native";
 import {colors} from "../../../styles/variables";
 
-export const TitleItemView = styled.View`
+export const TitleItemView = styled.TouchableOpacity`
   flex-direction: row;
   padding: 20px;
   margin: 0 ;
